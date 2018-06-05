@@ -1,0 +1,188 @@
+header {
+  background-image: url(https://static.independent.co.uk/s3fs-public/styles/article_small/public/thumbnails/image/2017/12/17/11/books.jpg);
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  text-align: left;
+  margin-top: -48px;
+  text-align: center;
+}
+h1 {
+  color: white;
+  bottom: 25%;
+  font-size: 70px;
+
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 5px;
+}
+h2 {
+  text-align: left;
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 3px;
+  background-color: black;
+  background-size: inherit;
+  color: white;
+  margin: 0px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+ul {
+  width: 280px;
+  height: 220px;
+  /* margin-right: 5%; */
+  display: inline-block;
+  list-style-type: none;
+}
+li {
+  text-align: left;
+}
+p {
+  word-wrap: break-word;
+  text-align: left;
+  
+}
+body {
+  text-align: center;
+  background-image: url(http://cccnews.info/wp-content/uploads/2018/05/math.jpg);
+  margin-top: 0px;
+ 
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+  position: relative;
+  margin-top: 30px 0px;
+  padding: 5px;
+  right: 10px;
+
+}
+
+.card-one {
+  order: 1;
+  flex-direction: row;
+  display: inline-block;
+  border: black;
+  border-style: solid;
+  background-color: green;
+  background-size: contain;
+  margin-right: 5px;
+
+}
+.card-two {
+  order: 2;
+  flex-direction: row;
+  display: inline-block;
+  background-color: rgb(56, 33, 187);
+  border: black;
+  border-style: solid;
+  margin-right: 5px;
+}
+.card-three {
+  order: 3;
+  flex-direction: row;
+  display: inline-block;
+  background-color: rgb(241, 245, 16);
+  border: black;
+  border-style: solid;
+  
+}
+.card-four {
+  order: 4;
+  flex-direction: row;
+  display: inline-block;
+  background-color: rgb(207, 45, 207);
+  border: black;
+  border-style: solid;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+.card-five {
+  order: 5;
+  flex-direction: row;
+  display: inline-block;
+  background-color: rgb(238, 101, 135);
+  border: black;
+  border-style: solid;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+.card-six {
+  order: 6;
+  flex-direction: row;
+  display: inline-block;
+  background-color: rgb(230, 93, 39);
+  border: black;
+  border-style: solid;
+  margin-top: 10px;
+}
+aside {
+  height: 499px;
+  width: 19.5%;
+  position: absolute;
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 3px;
+  right: 10px;
+  top: 355px;
+text-align: center;
+  font-size: 30px;
+  /* text-decoration-line: underline; */
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/71o%2B83xGR5L._SL1050_.jpg);
+  padding-top: 20px;
+  color: black;
+}
+#button {
+  padding: 20px 40px;
+  background-color: rgb(199, 27, 15);
+  border: black;
+  border-style: solid;
+  border-width: thin;
+}
+/* .score {
+  padding: 30px;
+  border: black;
+  border-style: solid;
+  border-width: thin; */
+
+footer {
+  position: relative;
+background-image: url(https://cdn.cricut.com/media/catalog/product/full/n/a/nate_sabcs_squareuppercase_1.jpg);
+  background-color: rgba(102, 95, 93, 1);
+
+  align-self: baseline;
+  left: 0;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  color: black;
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 5px;
+  font-size: 30px;
+  text-align: unset;
+}
+.footer {
+    margin: 20px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
+}
+#after_submit{
+    visibility: hidden;
+}
+#number_correct {
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    border: black;
+    border-style: solid;
+    border-width: thin;
+    text-decoration-line: none;
+    text-align: center;
+}
