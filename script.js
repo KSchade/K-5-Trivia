@@ -11,6 +11,7 @@ var correct=0;
     if( question1=="Chlorophyll") {
         correct++;
     }
+
 if ( question2 == "Michigan") {
     correct++;
 }
@@ -27,7 +28,23 @@ if (question6 == "3") {
     correct++;
 }
 //    document.getElementById("after_submit").style.visability = 'visible';
-    document.getElementById("number_correct").innerHTML = "(You got " + correct + " out of 6 correct!)";
-    console.log(number_correct)
+    // document.getElementById("number_correct").innerHTML = "(You got " + correct + " out of 6 correct!)";
+    // console.log(number_correct)
+
+
+var messages=["Awesome job!", "Not bad:)", "Mehhhh..."];
+var score;
+if(correct<=2) {
+    score=2;
+}
+if(correct>2 && correct<=4) {
+    score=1;
+}
+if (correct>4 && correct<=6) {
+    score= 0;
 }
 
+document.getElementById('message').innerHTML = messages[score];
+document.getElementById("number_correct").innerHTML = "(You got " + correct + " out of 6 correct!)";
+console.log(number_correct)
+}

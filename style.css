@@ -28,7 +28,15 @@ h2 {
   margin: 0px;
   padding: 20px;
   margin-bottom: 20px;
+  font-size: 30px;
 }
+h3 {
+    margin-left: -40px;
+    font-family: 'Jua', sans-serif;
+    letter-spacing: 3px;
+    font-size: 25px;
+}
+
 
 ul {
   width: 280px;
@@ -36,14 +44,23 @@ ul {
   /* margin-right: 5%; */
   display: inline-block;
   list-style-type: none;
+  
+  
+ 
 }
 li {
   text-align: left;
+  margin-left: -20px;
+
 }
-p {
+ p {
   word-wrap: break-word;
-  text-align: left;
-  
+  text-align: center;
+
+
+}
+.questions {
+    margin-left: -25px;
 }
 body {
   text-align: center;
@@ -59,10 +76,11 @@ body {
   justify-content: center;
   position: relative;
   margin-top: 30px 0px;
-  padding: 5px;
+  /* padding: 5px; */
   right: 10px;
 
 }
+
 
 .card-one {
   order: 1;
@@ -112,6 +130,7 @@ body {
   border-style: solid;
   margin-right: 5px;
   margin-top: 10px;
+  padding-right: 2px;
 }
 .card-six {
   order: 6;
@@ -121,6 +140,7 @@ body {
   border: black;
   border-style: solid;
   margin-top: 10px;
+  padding-right: 3px;
 }
 aside {
   height: 499px;
@@ -185,4 +205,19 @@ background-image: url(https://cdn.cricut.com/media/catalog/product/full/n/a/nate
     border-width: thin;
     text-decoration-line: none;
     text-align: center;
+}
+.score{
+    font-family: "Shadows Into Light", cursive;
+  letter-spacing: 5px;
+  background-color: transparent;
+  color: black;
+  text-align: center;
+}
+#message {
+    background-color: gray;
+    color: white;
+    height: 100px;
+    width: 100%;
+    
+
 }
