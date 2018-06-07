@@ -1,5 +1,5 @@
 header {
-  background-image: url(https://static.independent.co.uk/s3fs-public/styles/article_small/public/thumbnails/image/2017/12/17/11/books.jpg);
+  background-image: url(https://hdwallsource.com/img/2014/9/paint-wallpaper-24889-25569-hd-wallpapers.jpg);
   background-position-y: center;
   background-position-x: center;
   background-repeat: no-repeat;
@@ -8,11 +8,11 @@ header {
   height: 250px;
   text-align: left;
   margin-top: -48px;
-  text-align: center;
+  text-align: left;
 }
 h1 {
-  color: white;
-  bottom: 25%;
+  color: black;
+  /* bottom: 25%; */
   font-size: 70px;
 
   font-family: "Shadows Into Light", cursive;
@@ -31,19 +31,25 @@ h2 {
 h3 {
   font-family: "Jua", sans-serif;
   letter-spacing: 3px;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 ul {
   list-style-type: none;
+  font-size: 28px;
+  font-family: 'Yantramanav', sans-serif;
 }
 li {
   text-align: left;
-  margin-left: -20px;
+  margin-left: 19%;
+ 
 }
 p {
   word-wrap: break-word;
   text-align: center;
+  width: 60%;
+  margin-left: 19%;
+
 }
 body {
   text-align: center;
@@ -53,22 +59,22 @@ aside {
   position: static;
     
   /* flex-direction: row; */
-  height: 500px;
+  height: 400px;
   margin-left: 75%;
   flex-direction: column;
   font-family: "Shadows Into Light", cursive;
   letter-spacing: 3px;
    /* right: 10px;  */
   /* top: 355px;  */
-  margin-top: -36%;
-  margin-bottom: 10%;
-  margin-right: 5%;
+  margin-top: -410px;
+  /* margin-bottom: 10%; */
+  margin-right: 3%;
   margin-left: 70%;
   text-align: center;
   font-size: 30px;
   /* margin-bottom: 25%; */
   background-image: url(https://images-na.ssl-images-amazon.com/images/I/71o%2B83xGR5L._SL1050_.jpg);
-  padding-top: 20px;
+  /* padding-top: 20px; */
   color: black;
 }
 #button {
@@ -78,19 +84,20 @@ aside {
   border-style: solid;
   border-width: thin;
   cursor: pointer;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 20px;
 }
 
 footer {
   position: relative;
   background-image: url(https://cdn.cricut.com/media/catalog/product/full/n/a/nate_sabcs_squareuppercase_1.jpg);
   background-color: rgba(102, 95, 93, 1);
-
   align-self: baseline;
   left: 0;
   top: 20px;
   right: 0;
   bottom: 0;
-  height: 190px;
+  height: 180px;
   width: 100%;
   background-size: cover;
   color: black;
@@ -129,7 +136,7 @@ footer {
 #message {
   background-color: gray;
   color: white;
-  height: 100px;
+  height: 50px;
   width: 100%;
   font-size: 30px;
   width: 70%;
@@ -160,33 +167,62 @@ main {
 }
 .slide1 {
   border-style: solid;
-  background-color: green;
+  /* background-color: green; */
   margin-top: 5px;
+  background-image: url(http://media1.santabanta.com/full1/Outdoors/Clouds/clouds-41a.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .slide2 {
   border: black;
   border-style: solid;
-  background-color: blue;
+  /* background-color: blue; */
+  background-image: url(https://img.etsystatic.com/il/18121b/900457158/il_570xN.900457158_mgye.jpg?version=0);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .slide3 {
   border: black;
   border-style: solid;
-  background-color: yellow;
+  /* background-color: yellow; */
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLakLOHKjE_CQ1DU-YcbAhVwdmSomXJPu8P7OaJeqRa24Na8Dv);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .slide4 {
   border: black;
   border-style: solid;
-  background-color: purple;
+  /* background-color: purple; */
+  background-image: url(https://media.istockphoto.com/photos/misaligned-coloured-pencils-blank-blackboard-chalkboard-picture-id666108550?k=6&m=666108550&s=612x612&w=0&h=elkTdl8J2EqrElLY8ryzRyaQ663HGb3wSqSOVo_VWAc=);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: bottom;
+ 
+}
+.card-four {
+    color: white;
+    letter-spacing: 3px;
+    font-size: 15px;
+    
 }
 .slide5 {
   border: black;
   border-style: solid;
-  background-color: pink;
+  background-image: url(https://media3.giphy.com/media/WfIS1SBky00Sc/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-five{
+    color: white;
 }
 .slide6 {
   border: black;
   border-style: solid;
-  background-color: orange;
+  /* background-color: orange; */
+  background-image: url(http://thekidslogic.com/wp-content/uploads/2016/12/kidsspo-752x440.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 .slide-content {
   display: flex;
@@ -210,14 +246,14 @@ main {
 
 #arrow-left {
   border-width: 30px 40px 30px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent black transparent transparent;
   left: 0;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 #arrow-right {
   border-width: 30px 0px 30px 40px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent black;
   right: 0;
-  margin-right: 30px;
+  margin-right: 50px;
 }
