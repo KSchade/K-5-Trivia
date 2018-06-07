@@ -18,106 +18,155 @@
     </header>
 
     <h2>Elementary Education recap</h2>
+    <p id="timer"></p>
     <main>
         <form id="quiz" name="quiz">
-            <div class="card-container">
+            <div class="wrap">
+                <div id="arrow-left" class="arrow"></div>
+                <div id="arrow-right" class="arrow"></div>
+                <div id="slider">
+                    <div class="card-container">
+                        <div class="slide slide1">
+                            <div class="slide-content">
+                                <span>
 
-                <div class="card-one">
+                                    <div class="card-one">
 
-                    <ul class="science">
-                        <h3>Science</h3>
-                        <p class="questions">What typically green chemical found in plants uses photosynthesis to turn sunlight into energy?</p>
-                        <li class="answerA">
-                            <input type="radio" id=sci name="questionOne" value="Chlorophyll">Chlorophyll</li>
-                        <li class="answerB">
-                            <input type="radio" id=sci name="questionOne" value="Iodine">Iodine</li>
-                        <li class="answerC">
-                            <input type="radio" id=sci name="questionOne" value="Ethylamine">Ethylamine</li>
-                    </ul>
-                </div>
-                <div class="card-two">
+                                        <ul class="science">
+                                            <h3>Science</h3>
+                                            <p class="questions">What typically green chemical found in plants uses photosynthesis to turn sunlight
+                                                into energy?</p>
+                                            <li>
+                                                <input type="radio" class="sci" name="questionOne" value="Chlorophyll">Chlorophyll</li>
+                                            <li>
+                                                <input type="radio" class="sci" name="questionOne" value="Iodine">Iodine</li>
+                                            <li>
+                                                <input type="radio" class="sci" name="questionOne" value="Ethylamine">Ethylamine</li>
+                                        </ul>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slide slide2">
+                            <div class="slide-content">
+                                <span>
 
-                    <ul class="geography">
-                        <h3>Geography</h3>
-                        <p class="questions">Which U.S. state’s postal abbreviation is “MI?”</p>
-                        <li>
-                            <input type="radio" id=geo name="questionTwo" value="Mississippi">Mississippi</li>
-                        <li>
-                            <input type="radio" id=geo name="questionTwo" value="Michigan">Michigan</li>
-                        <li>
-                            <input type="radio" id=geo name="questionTwo" value="Missouri">Missouri</li>
-                    </ul>
-                </div>
-                <div class="card-three">
+                                    <div class="card-two">
 
-                    <ul class="history">
-                        <h3>History</h3>
-                        <p class="questions">Which of these U.S. states was one of the original 13 colonies?</p>
-                        <li>
-                            <input type="radio" id=hist name="questionThree" value="vermont">Vermont</li>
-                        <li>
-                            <input type="radio" id=hist name="questionThree" value="Alabama">Alabama</li>
-                        <li>
-                            <input type="radio" id=hist name="questionThree" value="northCarolina">North Carolina</li>
-                    </ul>
-                </div>
-                <div class="card-four">
+                                        <ul class="geography">
+                                            <h3>Geography</h3>
+                                            <p class="questions">Which U.S. state’s postal abbreviation is “MI?”</p>
+                                            <li>
+                                                <input type="radio" class="geo" name="questionTwo" value="Mississippi">Mississippi</li>
+                                            <li>
+                                                <input type="radio" class="geo" name="questionTwo" value="Michigan">Michigan</li>
+                                            <li>
+                                                <input type="radio" class="geo" name="questionTwo" value="Missouri">Missouri</li>
+                                        </ul>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slide slide3">
+                            <div class="slide-content">
+                                <span>
 
-                    <ul class "arts">
-                        <h3>Arts</h3>
-                        <p class="questions">If Rembrandt were to paint a portrait using only primary and secondary colors, how many different colors would he be able to use?</p>
-                        <li>
-                            <input type="radio" id=art name="questionFour" value="8">8</li>
-                        <li>
-                            <input type="radio" id=art name="questionFour" value="6">6</li>
-                        <li>
-                            <input type="radio" id=art name="questionFour" value="12">12</li>
-                    </ul>
-                </div>
-                <div class="card-five">
 
-                    <ul class="popular culture">
-                        <h3>Popular Culture</h3>
-                        <p class="questions">Which character was not in the cast of Lion King </p>
+                                    <div class="card-three">
 
-                        <li>
-                            <input type="radio" id=pop name="questionFive" value="Timone">Timone</li>
-                        <li>
-                            <input type="radio" id=pop name="questionFive" value="Ed">Ed</li>
-                        <li>
-                            <input type="radio" id=pop name="questionFive" value="Bagheera">Bagheera</li>
-                    </ul>
-                </div>
-                <div class="card-six">
+                                        <ul class="history">
+                                            <h3>History</h3>
+                                            <p class="questions">Which of these U.S. states was one of the original 13 colonies?</p>
+                                            <li>
+                                                <input type="radio" class="hist" name="questionThree" value="vermont">Vermont</li>
+                                            <li>
+                                                <input type="radio" class="hist" name="questionThree" value="Alabama">Alabama</li>
+                                            <li>
+                                                <input type="radio" class="hist" name="questionThree" value="northCarolina">North Carolina</li>
+                                        </ul>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slide slide4">
+                            <div class="slide-content">
+                                <span>
 
-                    <ul class="sports">
-                        <h3>Sports</h3>
-                        <p class="questions">How many periods are in an ice hockey game?
-                        </p>
-                        <li>
-                            <input type="radio" id=sport name="questionSix" value="2">2</li>
-                        <li>
-                            <input type="radio" id=sport name="questionSix" value="3">3</li>
-                        <li>
-                            <input type="radio" id=sport name="questionSix" value="4">4</li>
-                    </ul>
+                                    <div class="card-four">
+
+                                        <ul class "arts">
+                                            <h3>Arts</h3>
+                                            <p class="questions">If Rembrandt were to paint a portrait using only primary and secondary colors,
+                                                how many different colors would he be able to use?</p>
+                                            <li>
+                                                <input type="radio" class="art" name="questionFour" value="8">8</li>
+                                            <li>
+                                                <input type="radio" class="art" name="questionFour" value="6">6</li>
+                                            <li>
+                                                <input type="radio" class="art" name="questionFour" value="12">12</li>
+                                        </ul>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slide slide5">
+                            <div class="slide-content">
+                                <span>
+
+                                    <div class="card-five">
+
+                                        <ul class="popular culture">
+                                            <h3>Popular Culture</h3>
+                                            <p class="questions">Which character was not in the cast of Lion King </p>
+
+                                            <li>
+                                                <input type="radio" class="pop" name="questionFive" value="Timone">Timone</li>
+                                            <li>
+                                                <input type="radio" class="pop" name="questionFive" value="Ed">Ed</li>
+                                            <li>
+                                                <input type="radio" class="pop" name="questionFive" value="Bagheera">Bagheera</li>
+                                        </ul>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slide slide6">
+                            <div class="slide-content">
+                                <span>
+                            </div>
+
+                            <div class="card-six">
+
+                                <ul class="sports">
+                                    <h3>Sports</h3>
+                                    <p class="questions">How many periods are in an ice hockey game?
+                                    </p>
+                                    <li>
+                                        <input type="radio" class="sport" name="questionSix" value="2">2</li>
+                                    <li>
+                                        <input type="radio" class="sport" name="questionSix" value="3">3</li>
+                                    <li>
+                                        <input type="radio" class="sport" name="questionSix" value="4">4</li>
+                                </ul>
+                            </div>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
-
+            
     </main>
     <aside>
-            <h2 class="score">Score</h2>
+        <h2 class="score">Score</h2>
         <div class="submit">
             <input id="button" type="button" value="Submit!" onclick="check();">
         </div>
-        </form>
-        <!-- <h3>Points Tally</h3> -->
-        <!-- <div id="after_submit"> -->
-            <p id="message"></p>
-            <p id="number_correct"></p>
+        <!-- </form> -->
+
+        <p id="message"></p>
+        <p id="number_correct"></p>
+    </form>
         </div>
-        
-            <!-- <input class="score" placeholder=><id="number_correct"> -->
     </aside>
     <footer>
         <div class="footer">
@@ -126,7 +175,8 @@
             <b>Project One</b>
         </div>
     </footer>
-
+    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="script.js"></script>
 </body>
 
