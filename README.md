@@ -1,8 +1,8 @@
 #projectOne K-5 Trivia Game
 K-5 trivia is a one player game that tracks each selected answer and displays the users final score,dependent on the users input, after clicking submit.
 
-
-
+##### Mockup:
+![](screenshot.PNG)
 
 
 ## You Do
