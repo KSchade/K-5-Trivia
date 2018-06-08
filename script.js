@@ -1,3 +1,5 @@
+
+//using form scan html for the attribute name"quiz", scan for "questionOne" get the value//
 function check() {
   var question1 = document.quiz.questionOne.value;
   var question2 = document.quiz.questionTwo.value;
@@ -6,8 +8,10 @@ function check() {
   var question5 = document.quiz.questionFive.value;
   var question6 = document.quiz.questionSix.value;
 
+  //starting score is 0
   var correct = 0;
 
+  // if value equals answer add one point to the total
   if (question1 == "Chlorophyll") {
     correct++;
   }
@@ -28,7 +32,7 @@ function check() {
     correct++;
   }
 
-  var messages = ["Awesome job!", "Not bad :)", "Mehhhh..."];
+  var messages = ["Awesome job!", "Not bad :)", "Try Again!"];
   var score;
   if (correct <= 2) {
     score = 2;
