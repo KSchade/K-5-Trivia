@@ -196,6 +196,7 @@ main {
 }
 .card-four {
   color: white;
+  text-shadow: 3px 3px black;
 }
 .slide5 {
   border: black;
