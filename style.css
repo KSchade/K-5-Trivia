@@ -253,3 +253,6 @@ main {
   margin-right: 50px;
   display: block;
 }
+.hidden {
+  display: none;
+}

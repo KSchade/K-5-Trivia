@@ -1,34 +1,41 @@
-
 //using form scan html for the attribute name"quiz", scan for "questionOne" get the value//
+
+
+ 
+    var correct = 0;
 function check() {
-  var question1 = document.quiz.questionOne.value;
-  var question2 = document.quiz.questionTwo.value;
-  var question3 = document.quiz.questionThree.value;
-  var question4 = document.quiz.questionFour.value;
-  var question5 = document.quiz.questionFive.value;
-  var question6 = document.quiz.questionSix.value;
-
+  var quiz = document.getElementById("quiz");
+  
+  var question1 = document.quiz.querySelector(".sciOne");
+  var question2 = document.quiz.querySelector(".geoTwo");
+  var question3 = document.quiz.querySelector(".histThree");
+  var question4 = document.quiz.querySelector(".artTwo");
+  var question5 = document.quiz.querySelector(".popThree");
+  var question6 = document.quiz.querySelector(".sportTwo");
+ console.log(question1)
   //starting score is 0
-  var correct = 0;
 
+document.querySelector("#button").addEventListener("click", function () {
   // if value equals answer add one point to the total
-  if (question1 == "Chlorophyll") {
+  if (question1.value === ("Chlorophyll")) {
     correct++;
   }
-
-  if (question2 == "Michigan") {
+  console.log(question1)
+  if (question2.value === ("Michigan")) {
     correct++;
   }
-  if (question3 == "northCarolina") {
+  console.log(question2)
+  if (question3.value == ("northCarolina")) {
+    correct++;
+    console.log(question3)
+  }
+  if (question4.value == "6") {
     correct++;
   }
-  if (question4 == "6") {
+  if (question5.value == "Bagheera") {
     correct++;
   }
-  if (question5 == "Bagheera") {
-    correct++;
-  }
-  if (question6 == "3") {
+  if (question6.value == "3") {
     correct++;
   }
 
@@ -43,12 +50,15 @@ function check() {
   if (correct > 4 && correct <= 6) {
     score = 0;
   }
-
   document.getElementById("message").innerHTML = messages[score];
-  document.getElementById("number_correct").innerHTML =
-    "(You got " + correct + " out of 6 correct!)";
+})
+  var results = (document.getElementById("number_correct").innerHTML =
+  "(You got " + correct + " out of 6 correct!)");
+
+  
   console.log(number_correct);
 }
+
 var sliderQuestions = document.querySelectorAll(".slide"),
   arrowLeft = document.querySelector("#arrow-left"),
   arrowRight = document.querySelector("#arrow-right"),
@@ -60,8 +70,6 @@ function reset() {
   }
 }
 
-var slideOne = document.querySelector(".slide1");
-var slideSix = document.querySelector(".slide6");
 arrowLeft = document.querySelector("#arrow-left");
 arrowRight = document.querySelector("#arrow-right");
 var sliderQuestions = document.querySelectorAll(".slide"),
@@ -70,9 +78,8 @@ var sliderQuestions = document.querySelectorAll(".slide"),
 //just shows the first question  _________
 function startSlide() {
   reset();
-  arrowLeft.style.display = "none";
+  arrowLeft.classList.add("hidden");
   sliderQuestions[0].style.display = "block";
-  
 }
 
 //show previous slide
@@ -94,12 +101,10 @@ function slideRight() {
 arrowRight.addEventListener("click", function() {
   if (current === sliderQuestions.length - 1) {
     current = -1;
-    console.log("fire")
-  
-    
+    console.log("fire");
   }
-  if(current === sliderQuestions.length -2){
-  arrowRight.style.display= "none";
+  if (current === sliderQuestions.length - 2) {
+    arrowRight.style.display = "none";
   }
   slideRight();
 });
@@ -112,4 +117,3 @@ arrowLeft.addEventListener("click", function() {
   slideLeft();
 });
 startSlide();
-
